@@ -176,7 +176,7 @@ This field requires no special kwargs, and should accept all standard Django fie
 
 ## CharField
 
-This is a replacement for Django's `CharField` field. It uses the `MaxBytesValidator` validator that makes sure the value does not exceed the hard datastore limit of 1500 bytes (see `google.appengine.api.datastore_types _MAX_STRING_LENGTH`). Use this field whenever you're planning to store large char values in the datastore, else your data may get silently trimmed.
+This is a replacement for Django's `CharField` field. It uses the `MaxBytesValidator` validator that makes sure the value does not exceed the hard datastore limit of 1500 bytes (see `google.appengine.api.datastore_types _MAX_STRING_LENGTH`). Use text field whenever you're planning to store large char values in the datastore, else your data may get silently trimmed.
 
 ## JSONField
 
